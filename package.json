@@ -1,0 +1,24 @@
+{
+  "name": "scrape-gofundme",
+  "version": "1.0.0",
+  "description": "Scrape details from gofundme",
+  "main": "handler.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaeleyring/Scrape-Gofundme.git"
+  },
+  "author": "Michael Eyring",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaeleyring/Scrape-Gofundme/issues"
+  },
+  "homepage": "https://github.com/michaeleyring/Scrape-Gofundme#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "moment": "^2.22.2"
+  }
+}

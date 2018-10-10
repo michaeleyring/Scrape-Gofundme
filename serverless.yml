@@ -19,7 +19,7 @@ service: Scrape-Gofundme # NOTE: update this with your service name
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs6.10
 
 # you can overwrite defaults here
 #  stage: dev
@@ -46,17 +46,19 @@ provider:
 #    variable1: value1
 
 # you can add packaging information here
-#package:
-#  include:
-#    - include-me.js
-#    - include-me-dir/**
+package:
+  excludeDevDependencies: false
+  artifact: .\Scrape-Gofundme-artifact.zip
+  include:
+    - node_modules/**
+    - lib/**
 #  exclude:
 #    - exclude-me.js
 #    - exclude-me-dir/**
 
 functions:
-  hello:
-    handler: handler.hello
+  getgofundme:
+    handler: handler.getgofundme
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
